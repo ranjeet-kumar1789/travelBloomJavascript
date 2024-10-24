@@ -1,0 +1,196 @@
+{
+    "countries": [
+        {
+            "id": 1,
+            "name": "Australia",
+            "cities": [
+                {
+                    "name": "Sydney, Australia",
+                    "imageUrl": "https://picsum.photos/200?raw=true",
+                    "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
+                },
+                {
+                    "name": "Melbourne, Australia",
+                    "imageUrl": "https://picsum.photos/200?raw=true",
+                    "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Japan",
+            "cities": [
+                {
+                    "name": "Tokyo, Japan",
+                    "imageUrl": "https://picsum.photos/200?raw=true",
+                    "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
+                },
+                {
+                    "name": "Kyoto, Japan",
+                    "imageUrl": "https://picsum.photos/200?raw=true",
+                    "description": "Known for its historic temples, gardens, and traditional tea houses."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Thailand",
+            "cities": [
+                {
+                    "name": "Bangkok, Thailand",
+                    "imageUrl": "https://picsum.photos/200?raw=true",
+                    "description": "A vibrant city known for its street life, cultural landmarks, and temples like Wat Arun and Wat Pho."
+                },
+                {
+                    "name": "Phuket, Thailand",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200?raw=true",
+                    "description": "A popular beach destination known for its stunning beaches, vibrant nightlife, and water activities."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Greece",
+            "cities": [
+                {
+                    "name": "Athens, Greece",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200?raw=true",
+                    "description": "The historic capital known for its ancient landmarks like the Acropolis and Parthenon."
+                },
+                {
+                    "name": "Santorini, Greece",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200?raw=true",
+                    "description": "A picturesque island famous for its stunning sunsets, white-washed buildings, and beautiful beaches."
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "USA",
+            "cities": [
+                {
+                    "name": "Glacier National Park, USA",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200?raw=true",
+                    "description": "Known for its stunning landscapes, diverse wildlife, and beautiful hiking trails."
+                },
+                {
+                    "name": "Hawaiian Islands, USA",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200?raw=true",
+                    "description": "A tropical paradise known for its beautiful beaches, volcanic landscapes, and rich culture."
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "UK",
+            "cities": [
+                {
+                    "name": "London, UK",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200",
+                    "description": "A historic city known for its iconic landmarks like the Big Ben, Tower of London, and Buckingham Palace."
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "France",
+            "cities": [
+                {
+                    "name": "Paris, France",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200",
+                    "description": "The romantic capital known for its iconic Eiffel Tower, art museums, and charming streets."
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Indonesia",
+            "cities": [
+                {
+                    "name": "Bali, Indonesia",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200",
+                    "description": "A tropical paradise known for its beautiful beaches, vibrant culture, and stunning temples."
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Maldives",
+            "cities": [
+                {
+                    "name": "Maldives",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200",
+                    "description": "A tropical paradise known for its crystal-clear waters, luxurious resorts, and vibrant marine life."
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Spain",
+            "cities": [
+                {
+                    "name": "Barcelona, Spain",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200",
+                    "description": "A vibrant city known for its unique architecture, beautiful beaches, and rich culture."
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Canada",
+            "cities": [
+                {
+                    "name": "Banff, Canada",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200",
+                    "description": "Known for its stunning mountain landscapes, beautiful lakes, and outdoor activities."
+                },
+                {
+                    "name": "Vancouver, Canada",
+                    "imageUrl": "https://picsum.photos/seed/picsum/200",
+                    "description": "A vibrant city known for its beautiful natural surroundings, diverse culture, and outdoor activities."
+                }
+            ]
+        }
+    ],
+    "beachRecommendations": [
+        {
+            "name": "Bondi Beach, Australia",
+            "imageUrl": "https://picsum.photos/seed/picsum/200",
+            "description": "A world-famous beach known for its golden sands, surfing culture, and vibrant atmosphere."
+        },
+        {
+            "name": "Waikiki Beach, Hawaii",
+            "imageUrl": "https://picsum.photos/seed/picsum/200",
+            "description": "A popular beach destination known for its stunning views, surfing, and vibrant nightlife."
+        }
+    ],
+    "templeRecommendations": [
+        {
+            "name": "Angkor Wat, Cambodia",
+            "imageUrl": "https://picsum.photos/seed/picsum/200",
+            "description": "A UNESCO World Heritage site and the largest religious monument in the world, known for its stunning architecture and historical significance."
+        },
+        {
+            "name": "Borobudur, Indonesia",
+            "imageUrl": "https://picsum.photos/seed/picsum/200",
+            "description": "A 9th-century Mahayana Buddhist temple and a UNESCO World Heritage site, known for its intricate carvings and stunning architecture."
+        }
+    ],
+    "otherRecommendations": [
+        {
+            "name": "U.S. National Parks",
+            "imageUrl": "https://picsum.photos/seed/picsum/200",
+            "description": "A collection of protected areas known for their stunning natural beauty, diverse wildlife, and outdoor activities."
+        },
+        {
+            "name": "Cruises to Alaska",
+            "imageUrl": "https://picsum.photos/seed/picsum/200",
+            "description": "A popular travel option known for its breathtaking views, wildlife sightings, and unique experiences."
+        },
+        {
+            "name": "Maui, Hawaii",
+            "imageUrl": "https://picsum.photos/seed/picsum/200",
+            "description": "A beautiful island known for its stunning beaches, lush landscapes, and outdoor activities."
+        }
+    ]
+}

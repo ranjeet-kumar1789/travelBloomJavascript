@@ -1,0 +1,478 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-image: url('./img/home.jpg');
+    background-size: cover;
+}
+@keyframes slide-up {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Other CSS rules */
+nav {
+    background-color: #db0000; /* Semi-transparent background */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    /* width: 50%; */
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* CSS for the search bar */
+.search-bar {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #f6f6f6;
+    gap: 10px;
+    padding: 12px;
+    transition: background-color 0.25s;
+}
+
+.search-bar input[type="text"] {
+    font-size: 16px;
+    font-family: 'Plex, sans-serif';
+    color: #333;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 220px;
+}
+
+.search-bar input::placeholder 
+.search-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #db0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #000;
+}
+
+#bookNowButton {
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    margin-top: 10px; /* Margin on top */
+}
+
+
+
+
+
+/* CSS for the results container */
+#results {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-content: center; /* Center the grid items */
+    align-items: center;
+    text-align: center;
+}
+
+.city {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* More transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 100%; /* Default width */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.city img {
+    max-width: 100%;
+    width: 100%;
+    height: 100px;
+}
+
+/* Styles for no results message */
+.no-results {
+    grid-column: 1 / -1; /* Span all columns */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Make it clickable */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: 1000;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal img {
+    max-width: 100%;
+    max-height: 60vh; /* Ensure the image fits within the modal */
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* CSS for paragraph */
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+
+}
+/* CSS for the intro article */
+#intro {
+    background-color: rgb(219 0 0 / 60%); /* Semi-transparent background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: white;
+    width: 400px;
+    height: 200px;
+    animation: slide-up 1s ease;
+}
+
+#intro h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: white;
+    word-wrap: break-word; /* Ensure long words break to fit within the container */
+    text-align: center; /* Center the text within the container */
+    padding: 10px; /* Add padding to ensure text doesn't touch the edges */
+}
+
+#intro p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* CSS for the articles container */
+.articles-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+/* CSS for the intro article */
+#intro, #addition {
+    background-color: rgb(219 0 0 / 60%); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+    flex: 1; /* Allow articles to grow and shrink equally */
+    max-width: 45%; /* Ensure articles don't get too wide */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    animation: slide-up 1s ease;
+}
+
+#intro h2, #addition h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #4CAF50;
+    word-wrap: break-word; /* Ensure long words break to fit within the container */
+    text-align: center; /* Center the text within the container */
+    padding: 10px; /* Add padding to ensure text doesn't touch the edges */
+}
+
+#addition p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+#recommandations {
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: white;
+
+}
+#recommandations h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #4CAF50;
+    word-wrap: break-word; /* Ensure long words break to fit within the container */
+    text-align: left; /*position the text to the left */
+    padding: 10px; /* Add padding to ensure text doesn't touch the edges */
+}
+.home-background {
+    position: relative;
+    /* background-image: url('./img/home.jpg'); Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the image does not repeat */
+    height: 95vh; /* Adjust height if necessary */
+    width: 100%;
+    color: white;
+    display: inline-block;;
+    align-items: center;
+    justify-content: center;
+}
+.intro {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: rgb(219 0 0 / 40%); /* Transparent background to make text readable */
+    width: 600px; /* Adjust height if necessary */
+    padding: 20px;
+    border-radius: 10px;
+    animation: slide-up 1s ease;
+}
+
+/* Book Now button */
+.book-now {
+    background-color: #db0000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-now:hover {
+    background-color: #db0000;
+}
+
+/* Social media icons container */
+.social-icons {
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+    top:0;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    margin: 10px 0;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #db0000; /* Change color on hover */
+}
+.about-background{
+    display: flex;
+}
+.about-section {
+    padding: 50px;
+    background-color: rgb(219 0 0 / 40%);
+    text-align: center;
+    margin: 30px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    animation: slide-up 1s ease;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Team Section styling */
+.team-section {
+    padding: 30px 50px;
+    text-align: center;
+    animation: slide-up 1s ease;
+}
+
+.team-section h2 {
+    font-size: 30px;
+    margin: 0;
+    color: #fff;
+    background-color: #db0000;
+    padding: 20px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: rgb(219 0 0 / 40%);
+}
+
+.team-member {
+    /*background-color: white;*/
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.team-member h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #fff;
+}
+/* CSS for the contact form */
+.contact {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-width: 600px;
+    margin: 20px auto; /* Center the form */
+    animation: slide-up 1s ease;
+}
+
+.contact h2 {
+margin-top: 0;
+font-size: 24px;
+color: #db0000;
+text-align: center;
+}
+
+.contact form {
+display: flex;
+flex-direction: column;
+}
+
+.contact label {
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 16px;
+width: 100%;
+box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.contact textarea {
+resize: vertical; /* Allow vertical resizing */
+height: 150px;
+}
+
+.contact button {
+padding: 10px;
+background-color: #db0000;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.contact button:hover {
+background-color: #db0000;
+}
+
+.contact form button:hover {
+    background-color: #db0000;
+}
